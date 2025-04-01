@@ -64,7 +64,8 @@ planter-optimization-green-agriculture/ ├── README.md # Project documentat
 
 
 python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+source venv/bin/activate  
+or venv\Scripts\activate on Windows
 python src/cli.py
 
 
