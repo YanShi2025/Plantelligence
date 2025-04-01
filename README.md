@@ -62,3 +62,51 @@ planter-optimization-green-agriculture/ ├── README.md # Project documentat
    git clone https://github.com/your-username/planter-optimization-green-agriculture.git
    cd planter-optimization-green-agriculture
 
+
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+python src/cli.py
+This script will:
+
+Load cleaned environmental data
+Train the APPOM model
+Run a simulated real-time loop using RAPO
+Output dynamic planter adjustments
+
+pytest tests/
+
+
+[INFO] Reading new sensor data: {'temp_C': 18.5, 'soil_moisture': 22.1, ...}
+[ACTION] Predicted parameters: {'depth': 4.1, 'spacing': 15.0, 'speed': 5.2}
+[ACTION] Adjusted for dry soil: depth reduced to 3.6
+
+
+## 🌱 Future Development
+
+This project lays the foundation for intelligent, green-aware planter control systems. Future development directions include:
+
+- **IoT Integration**: Connecting with real-time environmental sensors and wireless data streams (e.g., soil probes, UAV imagery).
+- **Edge Deployment**: Porting APPOM + RAPO modules to lightweight hardware (e.g., Raspberry Pi, Jetson Nano) for field-ready use.
+- **Electric Machinery Interface**: Direct integration with electric-powered planters and energy-efficient automation systems.
+- **Crop-Specific Modeling**: Fine-tuning models for various crops (e.g., maize, wheat, rice) and regional soil profiles.
+- **Carbon Accounting**: Incorporating modules for estimating and logging CO₂-equivalent emissions reduction.
+- **Web Dashboard**: A visual interface for monitoring and adjusting planter performance in real-time.
+- **Farmer-Focused Simplification**: Creating low-cost, user-friendly interfaces for smallholder adoption globally.
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+You are free to use, modify, and distribute the code and resources with proper attribution. See the [LICENSE](./LICENSE) file for full terms.
+## 🙌 Acknowledgments
+
+This research project is part of a broader initiative to advance **climate-resilient, low-carbon agriculture** through AI and intelligent machinery.
+
+Special thanks to:
+- Agricultural engineers and environmental data scientists who contributed their field knowledge and validation support.
+- Open-source tools and libraries (e.g., scikit-learn, pandas, matplotlib) that made development seamless.
+- The global research community driving innovation in precision farming, sustainable mechanization, and green transformation.
+
+We also recognize the contributions of farmers and field practitioners whose insights shaped the practical goals of this system.
+
+
+
