@@ -66,19 +66,6 @@ planter-optimization-green-agriculture/ ├── README.md # Project documentat
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 python src/cli.py
-This script will:
-
-Load cleaned environmental data
-Train the APPOM model
-Run a simulated real-time loop using RAPO
-Output dynamic planter adjustments
-
-pytest tests/
-
-
-[INFO] Reading new sensor data: {'temp_C': 18.5, 'soil_moisture': 22.1, ...}
-[ACTION] Predicted parameters: {'depth': 4.1, 'spacing': 15.0, 'speed': 5.2}
-[ACTION] Adjusted for dry soil: depth reduced to 3.6
 
 
 ## 🌱 Future Development
